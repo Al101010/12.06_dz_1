@@ -7,7 +7,7 @@ test('should myFunction: Bowman', () => {
   });
 
 test('should myFunction: !Bowman', () => {
-    expect(() => new Character('')).toThrowError("10 >= name >= 2");
+    expect(() => new Character('')).toThrow("10 >= name >= 2");
   });
 
 
@@ -18,8 +18,8 @@ test('should myFunction: Swordsman', () => {
   });
 
 test('should myFunction: !Swordsman', () => {
-    expect(() => new Character('O', 'Swordsman')).toThrowError("10 >= name >= 2");
-    expect(() => new Character('Oleggggggggggggggg', 'Swordsman')).toThrowError("10 >= name >= 2");
+    expect(() => new Character('O', 'Swordsman')).toThrow("10 >= name >= 2");
+    expect(() => new Character('Oleggggggggggggggg', 'Swordsman')).toThrow("10 >= name >= 2");
   });
 
 
@@ -30,8 +30,8 @@ test('should myFunction: Magician', () => {
   });
 
 test('should myFunction: !Magician', () => {
-    expect(() => new Character('O', 'Magician')).toThrowError("10 >= name >= 2");
-    expect(() => new Character('Oleggggggggggggggg', 'Magician')).toThrowError("10 >= name >= 2");
+    expect(() => new Character('O', 'Magician')).toThrow("10 >= name >= 2");
+    expect(() => new Character('Oleggggggggggggggg', 'Magician')).toThrow("10 >= name >= 2");
   });
 
 
@@ -42,8 +42,8 @@ test('should myFunction: !Magician', () => {
   });
 
 test('should myFunction: !Undead', () => {
-    expect(() => new Character('O', 'Undead')).toThrowError("10 >= name >= 2");
-    expect(() => new Character('Oleggggggggggggggg', 'Undead')).toThrowError("10 >= name >= 2");
+    expect(() => new Character('O', 'Undead')).toThrow("10 >= name >= 2");
+    expect(() => new Character('Oleggggggggggggggg', 'Undead')).toThrow("10 >= name >= 2");
   });
 
 
@@ -54,8 +54,8 @@ test('should myFunction: !Undead', () => {
   });
 
 test('should myFunction: !Zombie', () => {
-    expect(() => new Character('O', 'Zombie')).toThrowError("10 >= name >= 2");
-    expect(() => new Character('Oleggggggggggggggg', 'Zombie')).toThrowError("10 >= name >= 2");
+    expect(() => new Character('O', 'Zombie')).toThrow("10 >= name >= 2");
+    expect(() => new Character('Oleggggggggggggggg', 'Zombie')).toThrow("10 >= name >= 2");
   });
 
 
@@ -66,14 +66,11 @@ test('should myFunction: Daemon', () => {
   });
 
 test('should myFunction: !Daemon', () => {
-    expect(() => new Character('O', 'Daemon')).toThrowError("10 >= name >= 2");
-    expect(() => new Character('Oleggggggggggggggg', 'Daemon')).toThrowError("10 >= name >= 2");
+    expect(() => new Character('O', 'Daemon')).toThrow("10 >= name >= 2");
+    expect(() => new Character('Oleggggggggggggggg', 'Daemon')).toThrow("10 >= name >= 2");
   });
 
 
-
-
-
 test('should myFunction: !Type', () => {
-    expect(() => new Character('Oleg', '')).toThrowError("one of the types: Bowman, Swordsman, Magician, Daemon, Undead, Zombie");
+    expect(() => new Character('Oleg', '')).toThrow("one of the types: Bowman, Swordsman, Magician, Daemon, Undead, Zombie");
   });
